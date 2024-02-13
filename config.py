@@ -11,8 +11,8 @@ super_sudoers = [6456857472]
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID", 17154185))
-API_HASH = getenv("API_HASH", "7d24797dd1d72adbe8ee2596be2904d0")
+API_ID = int(getenv("API_ID", 28018646))
+API_HASH = getenv("API_HASH", "f89aa8b3210794fc77b8353d2521a153")
 
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
@@ -26,7 +26,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 2000))
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6373798952))
+OWNER_ID = int(getenv("OWNER_ID", 6456857472))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -36,7 +36,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/lotusabdo/Matrix-Music.git",
+    "https://github.com/lotusabdo/Lotus.git",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
