@@ -11,8 +11,8 @@ super_sudoers = [6456857472]
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID", 28018646))
-API_HASH = getenv("API_HASH", "f89aa8b3210794fc77b8353d2521a153")
+API_ID = int(getenv("API_ID", 17154185))
+API_HASH = getenv("API_HASH", "7d24797dd1d72adbe8ee2596be2904d0")
 
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
