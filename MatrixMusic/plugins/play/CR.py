@@ -33,7 +33,10 @@ async def huhh(client: Client, message: Message):
              ],[ 
             InlineKeyboardButton(
                         "#بوده { كارف الكل }× „", url=f"https://t.me/jx_xr"), 
-                 
+                 ],[  
+                  InlineKeyboardButton(
+                text="اضغط لاضافتي لمجموعتك⚡",
+                url=f"https://t.me/{app.username}?startgroup=true"),
                 ],
 
             ]
@@ -58,7 +61,7 @@ async def yas(client, message):
     usr = await client.get_chat("jx_xr")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"𓏺 َِՏΌႮᎡᏟᎬ ᎡᎥΝΌ \n\n‍ ¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᎡᎥΝΌ", 
+    await message.reply_photo(photo,       caption=f"𓏺 َِՏΌႮᎡᏟᎬ ᎡᎥΝΌ \n\n‍ ¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -79,7 +82,7 @@ async def yas(client, message):
     usr = await client.get_chat("jx_xr")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"𓏺➥𝚂́𝙾𝚄𝚁𝙲𝙴 𝙻𝙾𝚃𝚄𝚂♲ .\n\n¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\n➥𝚂́𝙾𝚄𝚁𝙲𝙴 𝙻𝙾𝚃𝚄𝚂♲", 
+    await message.reply_photo(photo,       caption=f"ՏΌႮᎡᏟᎬ ᏞΌͲႮՏ.\n\n¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
