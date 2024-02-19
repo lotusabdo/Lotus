@@ -39,7 +39,6 @@ def track_markup(_, user_id, channel, fplay):
 
     return buttons
 
-
 def stream_markup_timer(_, videoid, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
