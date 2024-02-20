@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import ChatPermissions #ChatPrivileges
 import asyncio, requests 
-from AnonX import app
+from MatrixMusic import app
 #by > @PROGRAMMER_TOM / @BENN_DEV
 
 welcome_enabled = True
