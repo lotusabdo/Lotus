@@ -156,20 +156,12 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
                 text=_["CLOSE_BUTTON"],
                 callback_data=f"forceclose {query}|{user_id}",
             ),
+            user_id}",
+            ),
             InlineKeyboardButton(
-                text="𝚁𝙴𝚂𝚄𝙼𝙴",
+                text="ᎡᎬՏႮᎷᎬ",
                 callback_data=f"slider F|{query_type}|{query}|{user_id}|{channel}|{fplay}",
             ),
         ],
     ]
     return buttons
-def panel_markup_1(_, videoid, chat_id):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=_["S_B_3"],
-                url=f"https://t.me/{app.username}?startgroup=true",
-            ),
-        ],
-        [
-            
