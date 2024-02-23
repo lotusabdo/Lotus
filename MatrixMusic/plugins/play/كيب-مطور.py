@@ -215,7 +215,7 @@ async def italy(client: Client, message: Message):
 @app.on_message(
     command(["دادي","الداد","الباشا","مبرمج","NEON","صاحب السورس","المطور","مطورو","مبرمج السورس"])
     & filters.group
-    & ~filters.edited
+    
 )
 async def yas(client, message):
     usr = await client.get_chat("R_R_B0")
@@ -236,7 +236,7 @@ async def yas(client, message):
 @app.on_message(
     command(["سوس","سوستي","الباشا","مبرمج","NEON","صاحب السورس","المطور","مطور","مطور السورس"])
     & filters.group
-    & ~filters.edited
+
 )
 async def yas(client, message):
     usr = await client.get_chat("Z9_QQ")
@@ -258,7 +258,7 @@ async def yas(client, message):
 @app.on_message(
     command(["مطور البوت","مطور"])
     & filters.group
-    & ~filters.edited
+    
 )
 async def yas(client, message):
     usr = await client.get_chat({OWNER_ID})
