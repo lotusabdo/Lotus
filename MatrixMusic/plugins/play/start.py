@@ -17,7 +17,6 @@ from config import (OWNER_ID ,
 	         BOT_TOKEN)
 from MatrixMusic import Telegram, YouTube, app
 from MatrixMusic.misc import SUDOERS, _boot_
-from MatrixMusic.plugins.playlist import del_plist_msg
 from MatrixMusic.plugins.sudoers import sudoers_list
 from MatrixMusic.utils.database import (add_served_chat,
                                        add_served_user,
