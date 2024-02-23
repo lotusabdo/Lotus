@@ -17,9 +17,9 @@ from config import (OWNER_ID ,
 	         BOT_TOKEN)
 from MatrixMusic import Telegram, YouTube, app
 from MatrixMusic.misc import SUDOERS, _boot_
-from AnonX.utils.decorators.language import LanguageStart
-from AnonX.utils.formatters import get_readable_time
-from AnonX.utils.inline import (help_pannel, private_panel,
+from MatrixMusic.utils.decorators.language import LanguageStart
+from MatrixMusic.utils.formatters import get_readable_time
+from MatrixMusic.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 loop = asyncio.get_running_loop()
 token = (BOT_TOKEN)
