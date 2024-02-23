@@ -5,7 +5,6 @@ from strings.filters import command
 from MatrixMusic import app
 from config import OWNER_ID
 from MatrixMusic.misc import SUDOERS
-from MatrixMusic.filters import command
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, ReplyKeyboardMarkup
 from pyrogram.types import (InlineKeyboardButton,CallbackQuery,InlineKeyboardMarkup, Message)
 from MatrixMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
