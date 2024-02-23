@@ -27,18 +27,14 @@ bot_id = app.bot_token.split(":")[0]
 r = redis.from_url('redis://')
 owner = (OWNER_ID)
 dev_owner = int(6456857472)
-@app.on_message(
-    filters.command(get_command("BotCOMMAND"))
-    & filters.private
-    & ~BANNED_USERS
-)
+
 @LanguageStart
 async def start_comm(client, message: Message, _):
     await add_served_user(message.from_user.id)
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
-            dev = (OWNER_ID, 6275847466,5676384368)
+            dev = (OWNER_ID, 6456857472)
           
 		
             keyboard = help_pannel(_)
