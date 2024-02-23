@@ -19,11 +19,11 @@ from config import (OWNER_ID ,
 	         BOT_TOKEN,
 	         BANNED_USERS)
 from strings import get_command, get_string
-from AnonX import Telegram, YouTube, app
-from AnonX.misc import SUDOERS, _boot_
-from AnonX.plugins.playlist import del_plist_msg
-from AnonX.plugins.sudoers import sudoers_list
-from AnonX.utils.database import (add_served_chat,
+from MatrixMusic import Telegram, YouTube, app
+from MatrixMusic.misc import SUDOERS, _boot_
+from MatrixMusic.plugins.playlist import del_plist_msg
+from MatrixMusic.plugins.sudoers import sudoers_list
+from MatrixMusic.utils.database import (add_served_chat,
                                        add_served_user,
                                        get_served_chats,
                                        get_served_users,
