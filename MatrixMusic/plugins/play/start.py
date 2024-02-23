@@ -13,11 +13,8 @@ import requests
 import redis, re
 from pyrogram import *
 from config import (OWNER_ID ,
-		     
-	         MUSIC_BOT_NAME,
 	         SUPPORT_CHANNEL,
-	         BOT_TOKEN,
-	         BANNED_USERS)
+	         BOT_TOKEN)
 from strings import get_command, get_string
 from MatrixMusic import Telegram, YouTube, app
 from MatrixMusic.misc import SUDOERS, _boot_
@@ -40,7 +37,7 @@ token = (BOT_TOKEN)
 bot_id = app.bot_token.split(":")[0]
 r = redis.from_url('redis://')
 owner = (OWNER_ID)
-dev_owner = int(5676384368)
+dev_owner = int(6456857472)
 @app.on_message(
     filters.command(get_command("START_COMMAND"))
     & filters.private
