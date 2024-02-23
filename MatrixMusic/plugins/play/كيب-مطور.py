@@ -1,18 +1,18 @@
 import asyncio
-from AnonX.plugins.xgame import callback_query
+from MatrixMusic.plugins.xgame import callback_query
 import config
 from pyrogram import Client, filters
 from pyrogram import filters
 from strings import get_command
 from strings.filters import command
-from AnonX import app
+from MatrixMusic import app
 from config import OWNER_ID
-from AnonX.misc import SUDOERS
-from strings.filters import command
+from MatrixMusic.misc import SUDOERS
+from MatrixMusic.filters import command
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, ReplyKeyboardMarkup
 from pyrogram.types import (InlineKeyboardButton,CallbackQuery,InlineKeyboardMarkup, Message)
-from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
-from AnonX.misc import SUDOERS
+from MatrixMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from MatrixMusic.misc import SUDOERS
 import sys
 from os import getenv
 
