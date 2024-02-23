@@ -3,7 +3,7 @@ from datetime import datetime
 
 import config
 from MatrixMusic import app
-from MatrixMusic.core.call import Anon, autoend
+from MatrixMusic.core.call import autoend
 from MatrixMusic.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 from strings.filters import command
