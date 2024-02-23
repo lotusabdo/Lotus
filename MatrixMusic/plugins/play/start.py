@@ -15,7 +15,6 @@ from pyrogram import *
 from config import (OWNER_ID ,
 	         SUPPORT_CHANNEL,
 	         BOT_TOKEN)
-from strings import get_command, get_string
 from MatrixMusic import Telegram, YouTube, app
 from MatrixMusic.misc import SUDOERS, _boot_
 from MatrixMusic.plugins.playlist import del_plist_msg
