@@ -1,6 +1,5 @@
 import asyncio
-from MatrixMusic.plugins.xgame import callback_query
-import config
+
 from pyrogram import Client, filters
 from pyrogram import filters
 from strings import get_command
