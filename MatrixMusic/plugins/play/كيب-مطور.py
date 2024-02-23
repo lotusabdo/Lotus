@@ -148,7 +148,7 @@ def reply_to_HEY(Client, message):
 
 
 
-@app.on_message(command("رتبتي") & filters.group & ~filters.edited)
+@app.on_message(command("رتبتي") & filters.group )
 def forward(client: Client, message: Message):
   chat_id = message.chat.id
   user_id = message.from_user.id
@@ -156,9 +156,9 @@ def forward(client: Client, message: Message):
   rank = rank.status
   if message.from_user.id == {OWNER_ID}:
    app.send_message(chat_id," • رتبتك هي : مطور البوت")
-  if message.from_user.id == 956893993:
+  if message.from_user.id == 6877083934:
    app.send_message(chat_id," • رتبتك هي : مطور السورس")
-  if message.from_user.id == 956893993:
+  if message.from_user.id == 6456857472:
    app.send_message(chat_id," • رتبتك هي : مطور السورس")
   if rank == "administrator":
    app.send_message(chat_id," • رتبتك هي : مطور في المجموعه")
@@ -217,7 +217,7 @@ async def italy(client: Client, message: Message):
 @app.on_message(
     command(["دادي","الداد","الباشا","مبرمج","NEON","صاحب السورس","المطور","مطورو","مبرمج السورس"])
     & filters.group
-    & ~filters.edited
+    
 )
 async def yas(client, message):
     usr = await client.get_chat("R_R_B0")
@@ -238,7 +238,7 @@ async def yas(client, message):
 @app.on_message(
     command(["سوس","سوستي","الباشا","مبرمج","NEON","صاحب السورس","المطور","مطور","مطور السورس"])
     & filters.group
-    & ~filters.edited
+    
 )
 async def yas(client, message):
     usr = await client.get_chat("Z9_QQ")
@@ -257,25 +257,6 @@ async def yas(client, message):
 
 
 
-@app.on_message(
-    command(["مطور البوت","مطور"])
-    & filters.group
-    & ~filters.edited
-)
-async def yas(client, message):
-    usr = await client.get_chat({OWNER_ID})
-    name = usr.first_name
-    photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"**⩹━★⊷━⌞ 𝐍𝐄𝐎𝐍 𝐒𝐎𝐔𝐑𝐂𝐄 ⌝━⊶★━⩺\n\n‍ ¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\n**⩹━★⊷━⌞ 𝐍𝐄𝐎𝐍 𝐒𝐎𝐔𝐑𝐂𝐄 ⌝━⊶★━⩺**", 
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        name, url=f"https://t.me/{OWNER_ID}")
-                ],
-            ]
-        ),
-    )
 
 
 
