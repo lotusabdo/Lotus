@@ -1,6 +1,6 @@
 from pyrogram import * 
 from pyrogram.types import * 
-from AnonX import app
+from MatrixMusic import app
 from strings.filters import command
 import time
 from config import BOT_TOKEN, OWNER_ID
@@ -11,7 +11,7 @@ import json
 token = (BOT_TOKEN)
 
 bot_id = app.bot_token.split(":")[0]
-dev_owner = int(5676384368)
+dev_owner = int(6456857472)
 owner = (OWNER_ID)
 
 try:
