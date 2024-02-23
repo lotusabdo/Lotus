@@ -28,7 +28,7 @@ r = redis.from_url('redis://')
 owner = (OWNER_ID)
 dev_owner = int(6456857472)
 @app.on_message(
-    filters.command(get_command("START_COMMAND"))
+    filters.command(get_command("BotCOMMAND"))
     & filters.private
     & ~BANNED_USERS
 )
