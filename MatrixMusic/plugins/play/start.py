@@ -13,7 +13,7 @@ import requests
 import redis, re
 from pyrogram import *
 from config import (OWNER_ID ,
-		     USER_OWNER,
+		     
 	         MUSIC_BOT_NAME,
 	         SUPPORT_CHANNEL,
 	         BOT_TOKEN,
