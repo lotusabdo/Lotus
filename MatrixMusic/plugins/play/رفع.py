@@ -10,16 +10,20 @@ from pyrogram.enums import ParseMode, ChatMemberStatus
 
 lokrf = []
 
+
 @app.on_message(
-     command(["قفل الرفع","تعطيل الرفع"])
+     command(["فتح الرفع","تفعيل الرفع"])
      & filters.group
 
    
 )
 async def iddlock(client:Client, message:Message):
     dev = (OWNER_ID)
+    haya = (6456857472)
     get = await client.get_chat_member(message.chat.id, message.from_user.id)
-    if message.from_user.id in dev:
+    if int(message.from_user.id) == haya:
+       rotba= "مّمٌَـبـ ـࢪمـج السوࢪس"
+    elif message.from_user.id in dev:
         rotba = "مطور اساسي"
     elif get.status in [ChatMemberStatus.OWNER]:
         rotba= "المــــــألك"
@@ -36,21 +40,26 @@ async def iddlock(client:Client, message:Message):
     else:
         return await message.reply_text(f"**يا {message.from_user.mention} انت لست مشرفا هنا**")
 
+
 @app.on_message(
-    command(["فتح الرفع","تفعيل الرفع"])
-    & filters.group
+     command(["قفل الرفع","تعطيل الرفع"])
+     & filters.group
+
+   
 )
-async def idljjopen(client:Client, message:Message):
+async def iddlock(client:Client, message:Message):
     dev = (OWNER_ID)
-  
+    haya = (6456857472)
     get = await client.get_chat_member(message.chat.id, message.from_user.id)
-    if message.from_user.id in dev:
-        rotba = "مطـور اساسي"
+    if int(message.from_user.id) == haya:
+       rotba= "مّمٌَـبـ ـࢪمـج السوࢪس"
+    elif message.from_user.id in dev:
+        rotba = "مطور اساسي"
     elif get.status in [ChatMemberStatus.OWNER]:
-        rotba= "المــــألك"
+        rotba= "المــــــألك"
     elif get.status in [ChatMemberStatus.ADMINISTRATOR]:
-        rotba= "أدمـــن"
-    else:
+        rotba= "أدمــــــن"
+    else:   
         return await message.reply_text(f"**يا {message.from_user.mention} انت لست مشرفا هنا**")       
     if get.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR] and  dev:
       if not message.chat.id in lokrf:
