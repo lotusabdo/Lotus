@@ -26,14 +26,16 @@ async def huhh(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "𝙶𝚁𝙾̀𝚄𝙿", url=f"https://t.me/jx_xll"), 
+                        "ᏀᎡΌႮᏢ", url=f"https://t.me/jx_xll"), 
                  InlineKeyboardButton(
-                   "𝚂́𝙾𝚄𝚁𝙲𝙴 𝙻𝙾𝚃𝚄𝚂",       url=f"https://t.me/l2_2Y"), 
+                   "ՏΌႮᎡᏟᎬ ᏞΌͲႮՏ",       url=f"https://t.me/l2_2Y"), 
                  
              ],[ 
             InlineKeyboardButton(
-                        "#بوده { كارف الكل }× „", url=f"https://t.me/jx_xr"), 
-                 ],[  
+                        "𖥻 َِ𝗨َِ𝗥 , َِ𝗙َِ𝗮َِ𝗩 َِ𝗔َِ𝗯َِ𝗗َِ𝗼َِ𝗼•", url=f"https://t.me/jx_xr"), 
+                   InlineKeyboardButton(
+                        "[ 𝓟𝓲𝓟𝓼𝓮 ]‎%🇮🇹🚬💔]", url=f"https://t.me/wa_7_d"), 
+             ],[ 
                   InlineKeyboardButton(
                 text="اضغط لاضافتي لمجموعتك⚡",
                 url=f"https://t.me/{app.username}?startgroup=true"),
@@ -61,7 +63,7 @@ async def yas(client, message):
     usr = await client.get_chat("jx_xr")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"𓏺 َِՏΌႮᎡᏟᎬ ᎡᎥΝΌ \n\n‍ ¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
+    await message.reply_photo(photo,       caption=f"𓏺ՏΌႮᎡᏟᎬ ᏞΌͲႮՏ\n\n‍ ¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -82,7 +84,29 @@ async def yas(client, message):
     usr = await client.get_chat("jx_xr")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"ՏΌႮᎡᏟᎬ ᏞΌͲႮՏ.\n\n¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
+    await message.reply_photo(photo,       caption=f"معلومات مبرمج السورس.\n\n¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        name, url=f"https://t.me/{usr.username}")
+                ],
+            ]
+        ),
+    )
+
+
+
+@app.on_message(
+    command(["بيبسي" , "احمد","بيبس"])
+    
+    
+)
+async def yas(client, message):
+    usr = await client.get_chat("wa_7_d")
+    name = usr.first_name
+    photo = await app.download_media(usr.photo.big_file_id)
+    await message.reply_photo(photo,       caption=f"معلومات مطور السورس.\n\n¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
