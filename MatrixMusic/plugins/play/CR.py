@@ -21,7 +21,7 @@ from random import  choice, randint
 async def huhh(client: Client, message: Message):
     await message.reply_video(
         video=f"https://graph.org/file/8e889b909ac6011b4cde2.mp4",
-        caption=f"""\nمرحبا بك عزيزي {message.from_user.mention} في قسم سورس ميوزك\nللتحدث مع مطور السورس اضغط علي الازرار بالاسفل👇""",
+        caption=f"""\nمرحبا بك عزيزي {message.from_user.mention} في قسم سورس لوتس ميوزك\nللتحدث مع مطورين السورس اضغط علي الازرار بالاسفل👇""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
