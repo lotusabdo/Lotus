@@ -12,7 +12,7 @@ lokrf = []
 
 
 @app.on_message(
-     command(["فتح الرفع","تفعيل الرفع"])
+     command(["قفل العاب","تعطيل العاب"])
      & filters.group
 
    
@@ -42,7 +42,7 @@ async def iddlock(client:Client, message:Message):
 
 
 @app.on_message(
-     command(["قفل الرفع","تعطيل الرفع"])
+     command(["فتح العاب","تفعيل العاب"])
      & filters.group
 
    
