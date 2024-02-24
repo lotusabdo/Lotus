@@ -13,8 +13,8 @@ REPLY_MESSAGE_BUTTONS = [
         ("السورس"),
     ],
     [
-        ("صور شباب"),
-        ("صور بنات")
+        ("المطور بوده"),
+        ("المبرمج بيبسي")
     ],
     [
         ("استوري")
@@ -27,7 +27,7 @@ REPLY_MESSAGE_BUTTONS = [
         ("افلام")
     ],
     [
-        ("اقتساب"),
+        ("اقتباس"),
         ("هيدرا")
     ],
     [
@@ -68,15 +68,15 @@ REPLY_MESSAGE_BUTTONS = [
         
     ],
     [
-        ("بوده"),
-        ("بيبسي")
+        ("صور بنات"),
+        ("صور شباب")
     ],
     [
        ("انصحني")
         
     ],
     [
-        ("اخفاء الازرار")
+        (" قفل الكيبورد")
     ]
 ]
 
@@ -305,3 +305,17 @@ async def ihd(client: Client, message: Message):
             ]
         )
     )
+@app.on_message(filters.regex("‹ قفل الكيبورد ›") & filters.group)
+async def down(client, message):
+          m = await message.reply("- تم اغلاق الكيبورد بنجاح", reply_markup= ReplyKeyboardRemove(selective=True))
+
+
+@app.on_message(filters.group & command("طريقة ربط القنوات"))
+async def dowhmo(client: Client, message: Message):
+    await message.reply_text("""- هلا والله◌\nعشان تشغل بالقنوات لازم تسوي بعض الخطوات وهي◌ :\n\n1 -› تدخل البوت قناتك وترفعه مشرف\n2 -› ترجع للقروب وتكتب { ربط + يوزر القناة }\n3 -› اضغط على زر اوامر التشغيل عشان تعرف كيف تشغل..""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "", url=f"https://t.me/UUUOLC"),
+                ],[
