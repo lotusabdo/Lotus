@@ -8,7 +8,6 @@ async def get_chat_info(chat, already=False):
         chat = await app.get_chat(chat)
     chat_id = chat.id
     members = chat.members_count
-	await message.reply_text(f"""
 ● نورت عمري ♥♡
 {message.from_user.first_name}
 ●  يجب احترام الادمنية
