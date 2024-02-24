@@ -318,4 +318,7 @@ async def dowhmo(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "", url=f"https://t.me/UUUOLC"),
-                ],[
+                ],
+            ]
+        )
+    )
