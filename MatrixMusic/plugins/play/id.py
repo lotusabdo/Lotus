@@ -77,47 +77,27 @@ async def idljjopen(client, message):
 
 
 @app.on_message(
-    command(["id","ايدي","ا"])
-    & filters.group
-  )
- member_count = app.get_chat_members_count(message.chat.id)
-    txt = ["مــلآگ ونآزل مــن آلســمــآ♥️🥺","وويليييي يااا طرف انتتتتتت","مافيككشش جوو","نععليييي منككككك",]
-    xtxk = random.choice(txt)
-    botdev= (OWNER_ID)
-    haya = (6456857472)
-    get = await client.get_chat_member(message.chat.id, message.from_user.id)
-    if int(message.from_user.id) == haya:
-       rotba= "مّمٌَـبـ ـࢪمـج السوࢪس"
-    elif message.from_user.id in botdev:
-        rotba = "مطور اساسي"
-    elif get.status in [ChatMemberStatus.ADMINISTRATOR]:
-        rotba= "أدمــــــن"
-    elif get.status in [ChatMemberStatus.OWNER]:
-        rotba= "المــــــألك"
-    else: 
-        rotba= "عضو"
-    
-    if int(message.from_user.id) == haya:
-       prim= "بريميوم لفل ماكس"
-    elif message.from_user.id in botdev:
-       prim = "بريميوم"
-    else: 
-       prim= "عادي"
+    filters.command(["ايدي","id","ا"], "")
+& filters.group
+)
+async def iddd(client, message):
     if message.chat.id in iddof:
       return
     usr = await client.get_chat(message.from_user.id)
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"""**✧ ¦{xtxk}\n\n✧ ¦ آســمــڪ ← {message.from_user.mention}\n✧ ¦ يـوزرڪ ← @{message.from_user.username}\n✧ ¦ آيـديــڪ ← `{message.from_user.id}`\n✧ ¦ ࢪتبتك ← {rotba} \n✧ ¦ نوع الحساب ← {prim}\n✧ ¦ رسائلك ← {member_count}\n✧ ¦ بـآيـو ← {usr.bio}**""",
+    await message.reply_photo(photo,       caption=f"""🤡 ¦𝙽𝙰𝙼𝙴 :{message.from_user.mention}\n🎯 ¦𝚄𝚂𝙴𝚁 :@{message.from_user.username}\n🎃 ¦𝙸𝙳 :`{message.from_user.id}`\n💌 ¦𝙱𝙸𝙾 :{usr.bio}\n✨ ¦𝙲𝙷𝙰𝚃: {message.chat.title}\n♻️ ¦𝙸𝙳.𝙶𝚁𝙾𝚄𝙿 :`{message.chat.id}`""", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        name, url=f"https://t.me/openmessage?user_id")
+                        name, url=f"https://t.me/{message.from_user.username}")
                 ],
             ]
         ),
     )
+
+
 
 iddof = []
 @app.on_message(
