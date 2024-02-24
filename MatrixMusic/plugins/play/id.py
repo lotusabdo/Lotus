@@ -79,10 +79,8 @@ async def idljjopen(client, message):
 @app.on_message(
     command(["id","ايدي","ا"])
     & filters.group
-)
-
-   
-    member_count = app.get_chat_members_count(message.chat.id)
+  )
+ member_count = app.get_chat_members_count(message.chat.id)
     txt = ["مــلآگ ونآزل مــن آلســمــآ♥️🥺","وويليييي يااا طرف انتتتتتت","مافيككشش جوو","نععليييي منككككك",]
     xtxk = random.choice(txt)
     botdev= (OWNER_ID)
