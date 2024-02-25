@@ -63,7 +63,7 @@ async def yas(client, message):
     usr = await client.get_chat("jx_xr")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"𓏺ՏΌႮᎡᏟᎬ ᏞΌͲႮՏ\n\n‍ ¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
+    await message.reply_photo(photo,       caption=f"معلومات مطور السورس\n\n‍ ¦dev :{name}\n\n ¦user :@{usr.username}\n\n ¦id :`{usr.id}`\n\n ¦bio :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -84,7 +84,7 @@ async def yas(client, message):
     usr = await client.get_chat("jx_xr")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"معلومات مبرمج السورس.\n\n¦ᦔꫀꪜ :{name}\n\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n\n ¦Ꭵժ :`{usr.id}`\n\n ¦ႦᎥ᥆ :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
+    await message.reply_photo(photo,       caption=f"معلومات مطور السورس.\n\n¦dev :{name}\n\n ¦user :@{usr.username}\n\n ¦id :`{usr.id}`\n\n ¦boi :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -106,7 +106,7 @@ async def yas(client, message):
     usr = await client.get_chat("p_ip_s")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"معلومات مطور السورس.\n\n¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
+    await message.reply_photo(photo,       caption=f"معلومات مبرمج السورس.\n\n¦dev :{name}\n\n ¦user :@{usr.username}\n\n ¦id :`{usr.id}`\n\n ¦bio :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
