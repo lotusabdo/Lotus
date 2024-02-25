@@ -1,7 +1,7 @@
 from pyrogram import filters
 
 import config
-from strings import get_command
+from strings.filters import command
 from MatrixMusic import app
 from MatrixMusic.misc import SUDOERS
 from MatrixMusic.utils.database import autoend_off, autoend_on
