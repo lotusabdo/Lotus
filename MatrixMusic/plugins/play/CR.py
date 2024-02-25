@@ -76,7 +76,7 @@ async def yas(client, message):
 
 
 @app.on_message(
-    command(["بوده" , "فوديكا","ميشو"])
+    command(["بوده" , "فوديكا","مطور فوديكا"])
     
     
 )
