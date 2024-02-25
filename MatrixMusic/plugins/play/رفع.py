@@ -12,7 +12,7 @@ lokrf = []
 
 
 @app.on_message(
-     command(["قفل العاب","تعطيل العاب"])
+     command(["قفل الرفع","تعطيل الرفع"])
      & filters.group
 
    
@@ -30,13 +30,13 @@ async def iddlock(client:Client, message:Message):
     elif get.status in [ChatMemberStatus.ADMINISTRATOR]:
         rotba= "أدمــــــن"
     else:   
-        return await message.reply_text(f"**يا {message.from_user.mention} انت لست مشرفا هنا**")    
+        return await message.reply_text(f"يا {message.from_user.mention} انت لست مشرفا هنا")    
      
     if get.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR] and  dev:
         if message.chat.id in lokrf:
-            return await message.reply_text(f"**يا {message.from_user.mention}\n الالعاب مقفله من قبل**")
+            return await message.reply_text(f"يا {message.from_user.mention}\n الالعاب مقفله من قبل")
         lokrf.append(message.chat.id)
-        return await message.reply_text(f"**تم قفل الالعاب بنجاح\n\n بواسطة {rotba} ←{message.from_user.mention}**")
+        return await message.reply_text(f"تم قفل الالعاب بنجاح\n\n بواسطة {rotba} ←{message.from_user.mention}")
     else:
         return await message.reply_text(f"**يا {message.from_user.mention} انت لست مشرفا هنا**")
 
@@ -60,12 +60,12 @@ async def iddlock(client:Client, message:Message):
     elif get.status in [ChatMemberStatus.ADMINISTRATOR]:
         rotba= "أدمــــــن"
     else:   
-        return await message.reply_text(f"**يا {message.from_user.mention} انت لست مشرفا هنا**")       
+        return await message.reply_text(f"يا {message.from_user.mention} انت لست مشرفا هنا")       
     if get.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR] and  dev:
       if not message.chat.id in lokrf:
-        return await message.reply_text(f"**يا {message.from_user.mention}\الالعاب معفل من قبل**")
+        return await message.reply_text(f"يا {message.from_user.mention}\الالعاب معفل من قبل")
       lokrf.remove(message.chat.id)
-      return await message.reply_text(f"**تم فتح الالعاب بنجاح\n\n بواسطة {rotba} ←{message.from_user.mention}**")
+      return await message.reply_text(f"تم فتح الالعاب بنجاح\n\n بواسطة {rotba} ←{message.from_user.mention}")
  
    
 
@@ -84,7 +84,7 @@ async def rf3nmla(client:Client, message:Message):
 async def tnzelnmla(client:Client, message:Message):
   if message.reply_to_message.from_user.mention in klb:
     klb.remove(message.reply_to_message.from_user.mention)
-  await message.reply_text(f"**تم تنزيل العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n من قائمة الكلاب 😂♥️ \n\n لعرض القائمه اكتب قائمة الكلاب**")
+  await message.reply_text(f"تم تنزيل العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n من قائمة الكلاب 😂♥️ \n\n لعرض القائمه اكتب قائمة الكلاب")
 
 
 @app.on_message(command("قائمة كلاب"))
@@ -92,7 +92,7 @@ async def nml(client:Client, message:Message):
   kq = ""
   for n in klb:
       kq += n + "\n"
-  await message.reply_text(f"**قائمة الكلاب لي تنبح 😂😂 \n\n{kq}**")
+  await message.reply_text(f"قائمة الكلاب لي تنبح 😂😂 \n\n{kq}**")
 
 zoj = []
 
