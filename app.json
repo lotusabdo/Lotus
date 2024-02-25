@@ -12,6 +12,15 @@
     "pyrogram"
     ],
     "env": {
+         "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
       "BOT_TOKEN": {
         "description": "⦗ @Botfather ⦘ ↫ تـــوكـــن الـبـوت",
         "value": "",
@@ -32,6 +41,11 @@
         "value": "",
         "required": false
       },
+          "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
+        "value": "",
+        "required": true 
+     },      
       "HEROKU_APP_NAME": {
         "description": "⦗ اســـم التطبيـــق - نفـس اول مربـع بالقائمـة نسـخ لصـق حـروف انكلـش سمــول ⦗ صغيـره فقـط",
         "value": "",
