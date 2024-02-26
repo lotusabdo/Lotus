@@ -21,7 +21,7 @@ from MatrixMusic.utils.database import (
     is_maintenance,
 )
 from MatrixMusic.utils.inline import botplaylist_markup
-from config import PLAYLIST_IMG_URL, SUPPORT_CHAT, adminlist
+from config import PLAYLIST_IMG_URL, adminlist
 from strings import get_string
 
 links = {}
