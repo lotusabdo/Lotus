@@ -30,7 +30,7 @@ links = {}
 def PlayWrapper(command):
     async def wrapper(client, message):
         language = await get_lang(message.chat.id)
-        _ = get_string(language)
+    
         if message.sender_chat:
             upl = InlineKeyboardMarkup(
                 [
