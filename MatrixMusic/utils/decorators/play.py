@@ -30,20 +30,7 @@ links = {}
 def PlayWrapper(command):
     async def wrapper(client, message):
         language = await get_lang(message.chat.id)
-    
-        if message.sender_chat:
-            upl = InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="ʜᴏᴡ ᴛᴏ ғɪx ?",
-                            callback_data="AnonymousAdmin",
-                        ),
-                    ]
-                ]
-            )
-            return await message.reply_text(_["general_3"], reply_markup=upl)
-
+        _ = get_string(language)
         if await is_maintenance() is False:
             if message.from_user.id not in SUDOERS:
                 return await message.reply_text(
