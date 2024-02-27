@@ -15,7 +15,6 @@ from pyrogram.errors import FloodWait
 def tom_owners(client: Client, message: Message):
     chat_id = str(message.chat.id)
     Toom = message.from_user
-    tom_owners = load_tom_owners()
     tom_admin = load_tom_admin()
     chat_i = message.chat.id
     owner_id = None
