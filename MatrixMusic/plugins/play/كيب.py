@@ -92,7 +92,7 @@ async def cpanel(_, message: Message):
 
 @app.on_message(filters.regex("^اخفاء الازرار"))
 async def down(client, message):
-          m = await message.reply(" **- تم اخفاء الازرار بنجاح .\n\n- لاظهار كيب الارشادات /alpop   \n.
+          m = await message.reply(" تم اخفاء الازرار بنجاح") 
 @app.on_message(filters.regex("يـوتيوب. 📽"))
 def reply_to_HEY(Client, message):
     message.reply_photo(
