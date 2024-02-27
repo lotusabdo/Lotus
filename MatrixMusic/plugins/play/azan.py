@@ -7,10 +7,8 @@ import random
 from datetime import datetime
 import requests
 import pytz
-from MatrixMusic.core.call import Anony
 from pytgcalls import PyTgCalls, StreamType
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
-from MatrixMusic.core.call import Anony
 from MatrixMusic.utils.database import *
 from pytgcalls.exceptions import (NoActiveGroupCall,TelegramServerError,AlreadyJoinedError)
 from pyrogram.errors import (
