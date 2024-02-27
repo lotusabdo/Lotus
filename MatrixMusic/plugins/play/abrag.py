@@ -53,34 +53,6 @@ async def elgadee(c: Client, m: CallbackQuery):
 InlineKeyboardButton("ՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", url=f"https://t.me/l2_2Y")],
     await m.message.reply_text(abrag_text, reply_to_message_id=mid)
 
-
-@app.on_callback_query(filters.regex("^eldaloo (\\d+)$"))
-async def eldaloo(c: Client, m: CallbackQuery):
-    a = m.data.split(" ")
-    if m.from_user.id != int(a[1]):
-        await c.answer_callback_query(m.id, text="صاحب الامر هو فقط من يستطيع الضغط على الزر 🥷", show_alert=True)
-        return
-        await m.message.delete()
-
-    abrag_text = """•︙برج الدلو
-
-•︙من تاريخ 2023-4-1
-
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-
-•︙عاطفياً :  لا تتسرّع في الموافقة على قرار مهم قبل أن تدرس الوضع من جميع جوانبه، لأن الندم قد لا يفيدك لاحقاً 
-
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-
-•︙صحياً :  لكي تحافظ على صحتك السليمة، ما عليك سوى ممارسة الرياضة ثلاث مرات على الأقل في الأسبوع
-
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-
-•︙مهنياً :  هذا اليوم يفرض عليك أن تنظر إلى الأمور بطريقة أخرى، وأن تتعلّم كيف تحوّل الخسارة إلى ربح
-InlineKeyboardButton("ՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", url=f"https://t.me/l2_2Y")],
-    await m.message.reply_text(abrag_text, reply_to_message_id=mid)
-
-
 @app.on_callback_query(filters.regex("^elhout (\\d+)$"))
 async def elhout(c: Client, m: CallbackQuery):
     a = m.data.split(" ")
