@@ -24,7 +24,7 @@ from pyrogram import filters, Client
 
 
 
-@app.on_message(filters.command(["رفع مالك"], ""))
+@app.on_message(filters.command(["ماك"], ""))
 def promote_owner(client, message):
     if message.reply_to_message and message.reply_to_message.from_user:
         target = message.reply_to_message.from_user.id
