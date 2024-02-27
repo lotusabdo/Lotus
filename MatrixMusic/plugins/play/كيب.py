@@ -17,7 +17,7 @@ REPLY_MESSAGE_BUTTONS = [
         ("المبرمج بيبسي")
     ],
     [
-        ("استوري")
+        ("السورس")
     ],
     [
         ("النقشبندي"),
@@ -31,7 +31,7 @@ REPLY_MESSAGE_BUTTONS = [
         ("هيدرا")
     ],
     [
-        ("غنيلي")
+        ("استوري")
     ],
     [
         ("صور"),
@@ -53,7 +53,7 @@ REPLY_MESSAGE_BUTTONS = [
     ],
     [
         ("حساب العمر"),
-        ("سورس")
+        ("ابراج")
     ],
     [
         ("يـوتيوب. 📽")
@@ -76,7 +76,7 @@ REPLY_MESSAGE_BUTTONS = [
         
     ],
     [
-        (" قفل الكيبورد")
+        (" اخفاء الازرار")
     ]
 ]
 
@@ -90,6 +90,9 @@ async def cpanel(_, message: Message):
         )
 
 
+@app.on_message(filters.regex("^اخفاء الازرار"))
+async def down(client, message):
+          m = await message.reply(" **- تم اخفاء الازرار بنجاح .\n\n- لاظهار كيب الارشادات /alpop   \n.
 @app.on_message(filters.regex("يـوتيوب. 📽"))
 def reply_to_HEY(Client, message):
     message.reply_photo(
@@ -305,9 +308,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
     )
-@app.on_message(filters.regex("‹ قفل الكيبورد ›") & filters.group)
-async def down(client, message):
-          m = await message.reply("- تم اغلاق الكيبورد بنجاح", reply_markup= ReplyKeyboardRemove(selective=True))
+
 
 
 @app.on_message(filters.group & command("طريقة ربط القنوات"))
