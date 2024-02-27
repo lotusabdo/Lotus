@@ -89,11 +89,11 @@ async def elhamal(c: Client, m: CallbackQuery):
 •︙مهنياً :  قد يطرأ اليوم ما يهدد ببعض المشاريع على الصعيد المهني ويكون المناخ ضاغطاً جداً وملبداً بغيوم المشاكل
 InlineKeyboardButton("ՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", url=f"https://t.me/l2_2Y")]""" 
     await m.message.reply_text(abrag_text, reply_to_message_id=mid)
-@aasync def eldaloo(c: Client, m: CallbackQuery):
+@app.on_callback_query(filters.regex("^eldaloo (\\d+)$"))
 
-    a = m.data.splipp.on_callback_query(filters.regex("^eldaloo (\\d+)$"))
+async def eldaloo(c: Client, m: CallbackQuery):
 
-t(" ")
+    a = m.data.split(" ")
 
     if m.from_user.id != int(a[1]):
 
@@ -105,7 +105,8 @@ t(" ")
 
     abrag_text = """•︙برج الدلو
 
-•︙من تاريخ 2023-4-1
+•︙من تاريخ 2023-4-
+        
 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 
