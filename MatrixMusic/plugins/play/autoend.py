@@ -7,9 +7,6 @@ from MatrixMusic.misc import SUDOERS
 from MatrixMusic.utils.database import autoend_off, autoend_on
 from MatrixMusic.utils.decorators.language import language
 
-# Commands
-AUTOEND_COMMAND = get_command("AUTOEND_COMMAND")
-
 
 @app.on_message(filters.command(AUTOEND_COMMAND) & SUDOERS)
 async def auto_end_stream(client, message):
