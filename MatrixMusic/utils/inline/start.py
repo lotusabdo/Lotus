@@ -1,54 +1,37 @@
-from typing import Union
-
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import InlineKeyboardButton
 
 import config
+from MatrixMusic import app
 
 
-def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
+def start_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="اضغط لاضافتي لمجموعتك✅",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="🗒 الاوامر",
-                callback_data="settings_back_helper",
-        
+                text="اضغط لاضافتي لمجموعتك✅", url=f"https://t.me/{app.username}?startgroup=true"
             ),
+            InlineKeyboardButton(text="𝙶𝚁𝙾̀𝚄𝙿", url= "https://t.me/jx_xll"),
         ],
-     ]
+    ]
     return buttons
 
 
-def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
+def private_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
                 text="اضغط لاضافتي لمجموعتك✅",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                url=f"https://t.me/{app.username}?startgroup=true",
             )
+        ],
+        
+        [
+            InlineKeyboardButton(text="مطور البوت", user_id=config.OWNER_ID),
+            InlineKeyboardButton(text="𝙶𝚁𝙾̀𝚄𝙿", url=f"https://t.me/jx_xll"), 
         ],
         [
-            InlineKeyboardButton(
-                text="🗒 الاوامر", callback_data="settings_back_helper"
-            )
+            
+            InlineKeyboardButton(text="𝚂́𝙾𝚄𝚁𝙲𝙴 𝙻𝙾𝚃𝚄𝚂", url=f"https://t.me/l2_2Y") , 
         ],
-        [
-            InlineKeyboardButton(
-                text="[ 𝐴𝐿𝑃𝑂𝑃 ]ِ", url=f"https://t.me/VIP_ALPOP"
-            ),
-            InlineKeyboardButton(
-                text="👤 مطور البوت", user_id=OWNER
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text=" ⌞ 𝑆𝑂𝐔𝑅𝐶𝐸 𝐴𝐿𝑃𝑂𝑃 ⌝ ", url=f"https://t.me/SOURCE_ALPOP"
-            )
-        ],
-     ]
+    ]
     return buttons
