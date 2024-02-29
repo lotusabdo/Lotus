@@ -148,7 +148,7 @@ def reply_to_HEY(Client, message):
 
 
 
-@app.on_message(command("رتبتي") & filters.group & ~filters.edited)
+@app.on_message(command("رتبتي") & filters.group )
 def forward(client: Client, message: Message):
   chat_id = message.chat.id
   user_id = message.from_user.id
