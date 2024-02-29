@@ -187,7 +187,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["تينبمتك", "تنبمامت"], ""))
+@app.on_message(filters.command(["كت تويت ›", "تنبمامت ›"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(4,42)
     url = f"https://t.me/wffhvv/{rl}"
