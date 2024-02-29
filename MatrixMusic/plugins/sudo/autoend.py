@@ -1,25 +1,47 @@
-from MatrixMusic.plugins.play.filters import command
 from pyrogram import filters
+
 from pyrogram.types import Message
 
+
+
 from MatrixMusic import app
+
 from MatrixMusic.misc import SUDOERS
+
 from MatrixMusic.utils.database import autoend_off, autoend_on
 
 
-@app.on_message(command(["المغادره التلقائية", "المغادره التلقائيه"]) & SUDOERS)
+
+
+
+@app.on_message(filters.command("autoend") & SUDOERS)
+
 async def auto_end_stream(_, message: Message):
-    usage = "<b>• مثــال :</b>\n\nالمغادره التلقائيه [تفعيل | تعطيل]"
+
+    usage = "<b>ᴇxᴀᴍᴘʟᴇ :</b>\n\n/autoend [ᴇɴᴀʙʟᴇ | ᴅɪsᴀʙʟᴇ]"
+
     if len(message.command) != 2:
+
         return await message.reply_text(usage)
+
     state = message.text.split(None, 1)[1].strip().lower()
-    if state == "لوتس":
+
+    if state == "enable":
+
         await autoend_on()
+
         await message.reply_text(
-            "» تم تفعيل المغادرة التلقائية للمساعد .. بنجاح\n\nالحساب المساعد سوف يقوم بمغادرة الدردشة تلقائياً .. عند عدم وجود اشخاص في المكالمة"
+
+            "» ᴀᴜᴛᴏ ᴇɴᴅ sᴛʀᴇᴀᴍ ᴇɴᴀʙʟᴇᴅ.\n\nᴀssɪsᴛᴀɴᴛ ᴡɪʟʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ʟᴇᴀᴠᴇ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀғᴛᴇʀ ғᴇᴡ ᴍɪɴs ᴡʜᴇɴ ɴᴏ ᴏɴᴇ ɪs ʟɪsᴛᴇɴɪɴɢ."
+
         )
-    elif state == "جاك":
+
+    elif state == "disable":
+
         await autoend_off()
-        await message.reply_text("» تم تعطيل وضع المغادرة التلقائية للمساعد .. بنجاح.")
+
+        await message.reply_text("» ᴀᴜᴛᴏ ᴇɴᴅ sᴛʀᴇᴀᴍ ᴅɪsᴀʙʟᴇᴅ.")
+
     else:
+
         await message.reply_text(usage)
