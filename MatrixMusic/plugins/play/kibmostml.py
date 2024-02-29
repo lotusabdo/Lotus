@@ -16,7 +16,7 @@ from random import  choice, randint
 
 
 
-@app.on_message(filters.command(["غنيلي", "غني", "✨غنيلي", "غنيي"], ""))
+@app.on_message(filters.command(["غنيلي", "غني", "غنيي"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/gukygn/{rl}"
@@ -89,7 +89,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["هيدرا", "✨هيدرات"], ""))
+@app.on_message(filters.command(["هيدرا", "هيدرات"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/flflfldld/{rl}"
@@ -159,7 +159,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["فيلم", "✨فيلم"], ""))
+@app.on_message(filters.command(["فيلم", "افلام"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,34)
     url = f"https://t.me/gyigkk/{rl}"
@@ -173,7 +173,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["استوري", "✨استوريهات"], ""))
+@app.on_message(filters.command(["استوري", "استوريهات"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(1,50)
     url = f"https://t.me/yoipopl/{rl}"
@@ -187,7 +187,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["تينبمتك", "تنبمامت"], ""))
+@app.on_message(filters.command(["كت تويت", "تنبمامت"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(4,42)
     url = f"https://t.me/wffhvv/{rl}"
