@@ -19,6 +19,6 @@ async def WelcomeDev(_, response: ChatMemberUpdated):
             chat_id=response.chat.id,
             reply_markup=markup,
             photo="downloads/developer.jpg", 
-            caption=f"- وسع المبرمج {name} دخل الشات.\n- {bio}"
+            caption=f"-  مطور سورس لوتس⚡ {name} دخل الشات.\n- {bio}"
         )
     
