@@ -31,7 +31,7 @@ async def ihd(client: Client, message: Message):
         )
 
 
-@app.on_message(filters.command(["صوره", "✨صوره", "صورهه", "صور"], ""))
+@app.on_message(filters.command(["‹ صوره", "✨صوره", "صورهه","‹ صور"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,50)
     url = f"https://t.me/vnnkli/{rl}"
