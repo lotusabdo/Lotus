@@ -11,8 +11,13 @@ from MatrixMusic import app
 from asyncio import gather
 from pyrogram.errors import FloodWait
 
-@app.on_message(filters.command(["المالك", "صاحب الخرابه", "المنشي"], "") & filters.group)
-async def gak_owne(client: Client, message: Message):
+@app.on_message(
+     command(["المالك"])
+     & filters.group
+
+   
+)
+async def iddlock(client:Client, message:Message):
       if len(message.filters.command) >= 2:
          return 
       else:
@@ -38,8 +43,13 @@ async def vgdg(client: Client, message: Message):
         
 
 array = []
-@app.on_message(filters.command(["@all", "تاك","تاك للكل"],""))
-async def nummmm(client: app, message):
+@app.on_message(
+     command(["تاك"])
+     & filters.group
+
+   
+)
+async def iddlock(client:Client, message:Message):
   if message.chat.id in array:
      return await message.reply_text("**التاك قيد التشغيل حالياً ،**")
   chek = await client.get_chat_member(message.chat.id, message.from_user.id)
