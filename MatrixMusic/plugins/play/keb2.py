@@ -1,5 +1,4 @@
 import asyncio
-from MatrixMusic.plugins.xgame import callback_query
 import config
 from pyrogram import Client, filters
 from pyrogram import filters
@@ -17,7 +16,7 @@ from os import getenv
 
 OWNER_ID = getenv("OWNER_ID")
 OWNER_USER_NAME = getenv("OWNER_USER_NAME")
- 𝙰𝙻𝙼𝙾𝚁𝚃𝙰𝙶𝙴𝙻 = getenv(" 𝙰𝙻𝙼𝙾𝚁𝚃𝙰𝙶𝙴𝙻")
+NEON = getenv("NEON")
 
 OWNER = getenv("OWNER")
 
@@ -25,7 +24,7 @@ from dotenv import load_dotenv
 import re
 
 
-@app.on_message(command(["كيب", "✭ رجوع"], "") & SUDOERS)
+@app.on_message(command(["كيب", "✭ رجوع"]) & SUDOERS)
 
 async def crsourceowner(client: Client, message: Message):
     text = REPLY_MESSAGE
@@ -159,7 +158,7 @@ def forward(client: Client, message: Message):
    app.send_message(chat_id," • رتبتك هي : مطور البوت")
   if message.from_user.id == 5089553588:
    app.send_message(chat_id," • رتبتك هي : مطور السورس")
-  if message.from_user.id == 5089553588:
+  if message.from_user.id == 6456857472:
    app.send_message(chat_id," • رتبتك هي : مطور السورس")
   if rank == "administrator":
    app.send_message(chat_id," • رتبتك هي : مطور في المجموعه")
@@ -206,27 +205,6 @@ async def italy(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "⸢  𝙰𝙻𝙼𝙾𝚁𝚃𝙰𝙶𝙴𝙻 ⸥", url=f"https://t.me/AlmortagelTech"),
-                ],
-            ]
-        ),
-    )
-
-
-@app.on_message(
-    command(["مطور البوت","مطور"])
-    & filters.group
-    & ~filters.edited
-)
-async def yas(client, message):
-    usr = await client.get_chat({OWNER_ID})
-    name = usr.first_name
-    photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"**⩹━★⊷━⌞  𝙰𝙻𝙼𝙾𝚁𝚃𝙰𝙶𝙴𝙻 ⌝━⊶★━⩺\n\n‍ ¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\n**⩹━★⊷━⌞  𝙰𝙻𝙼𝙾𝚁𝚃𝙰𝙶𝙴𝙻 ⌝━⊶★━⩺**", 
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        name, url=f"https://t.me/{OWNER_ID}")
                 ],
             ]
         ),
