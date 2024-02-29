@@ -7,8 +7,10 @@ import random
 from datetime import datetime
 import requests
 import pytz
+from MatrixMusic.core.call import Zelzaly
 from pytgcalls import PyTgCalls, StreamType
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
+from MatrixMusic.core.call import Zelzaly
 from MatrixMusic.utils.database import *
 from pytgcalls.exceptions import (NoActiveGroupCall,TelegramServerError,AlreadyJoinedError)
 from pyrogram.errors import (
@@ -43,7 +45,7 @@ async def kill():
 
 async def play(i):
   assistant = await group_assistant(Anony,i)
-  file_path = "./AnonXMusic/assets/azan.m4a"
+  file_path = "./MatrixMusic/assets/azan.m4a"
   stream = AudioPiped(file_path, audio_parameters=HighQualityAudio())
   try:
       await assistant.join_group_call(
@@ -53,7 +55,7 @@ async def play(i):
       )
   except NoActiveGroupCall:
     try:
-        await Anony.join_assistant(i,i)
+        await Zelzaly.join_assistant(i,i)
     except Exception as e:
        await app.send_message(i,f"{e}")
   except TelegramServerError:
