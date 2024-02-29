@@ -98,7 +98,7 @@ async def yas(client, message):
 
 
 @app.on_message(
-    command(["المبرمج السورس ›" , "احمد","بيبسي ›"])
+    command(["مبرمج السورس ›" , "احمد","بيبسي ›"])
     
     
 )
