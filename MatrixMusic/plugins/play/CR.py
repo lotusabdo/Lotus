@@ -55,7 +55,7 @@ async def huhh(client: Client, message: Message):
 
 
 @app.on_message(
-    command(["‹ مطور السورس ›"])
+    command(["مطور السورس"])
     
     
 )
@@ -98,7 +98,7 @@ async def yas(client, message):
 
 
 @app.on_message(
-    command(["مبرمج السورس ›" , "احمد","بيبسي ›"])
+    command(["مبرمج السوري" , "احمد","بيبسي"])
     
     
 )
