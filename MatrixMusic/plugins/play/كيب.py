@@ -10,7 +10,7 @@ REPLY_MESSAGE = "صلي علي اشرف خلق الله🌚🌺"
 
 REPLY_MESSAGE_BUTTONS = [
     [
-        ("الاوامر"),
+        ("‹ الاوامر ›"),
     ],
     [
 
@@ -24,7 +24,7 @@ REPLY_MESSAGE_BUTTONS = [
 
              ("‹ اقتباسات ›"),
 
-             ("‹ اسمي ›")
+             ("‹ مطور السورس ›")
 
           ],
 
@@ -140,7 +140,7 @@ from random import  choice, randint
 
 
 
-@app.on_message(command(["غنيلي", "غني", "غنيلي. 🎙", "غنيي"]))
+@app.on_message(command(["غنيلي", "غني", "‹ غنيلي ›", "غنيي"]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/gukygn/{rl}"
@@ -156,7 +156,7 @@ async def ihd(client: Client, message: Message):
     )
 
 
-@app.on_message(command(["صوره", "🕷", "صورهه", "صور"]))
+@app.on_message(command(["صور ›", "🕷", "صورهه", "صور ›"]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,50)
     url = f"https://t.me/vnnkli/{rl}"
@@ -172,7 +172,7 @@ async def ihd(client: Client, message: Message):
     )
 
 
-@app.on_message(command(["انميي", "انمي"]))
+@app.on_message(command(["‹ انميي", " ‹ انمي"]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/LoreBots7/{rl}"
@@ -188,7 +188,7 @@ async def ihd(client: Client, message: Message):
     )
 
 
-@app.on_message(command(["متحركه. 🎬", "متحركه"]))
+@app.on_message(command(["‹ متحركه. 🎬", "‹ متحركه "]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/GifWaTaN/{rl}"
@@ -203,7 +203,7 @@ async def ihd(client: Client, message: Message):
         )
     )
 
-@app.on_message(command(["اقتباسات", "اقتباس"]))
+@app.on_message(command(["اقتباسات ›", "اقتباس ›"]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/LoreBots9/{rl}"
@@ -218,7 +218,7 @@ async def ihd(client: Client, message: Message):
         )
     )
 
-@app.on_message(command(["هيدرا", "هيدرات"]))
+@app.on_message(command(["‹ هيدرا", "‹ هيدرات "]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/flflfldld/{rl}"
@@ -233,7 +233,7 @@ async def ihd(client: Client, message: Message):
         )
     )
 
-@app.on_message(command(["صور", "افتار بنات"]))
+@app.on_message(command(["‹ صور", "‹ افتار بنات"]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/vvyuol/{rl}"
@@ -248,7 +248,7 @@ async def ihd(client: Client, message: Message):
         )
     )
 
-@app.on_message(command(["صور شباب", "افتار شباب"]))
+@app.on_message(command(["‹ صور شباب", "‹ افتار شباب"]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/vgbmm/{rl}"
@@ -263,7 +263,7 @@ async def ihd(client: Client, message: Message):
         )
     )
 
-@app.on_message(command(["سوره", "قران"]))
+@app.on_message(command(["‹ قران ›"]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(1,90)
     url = f"https://t.me/opuml/{rl}"
@@ -278,7 +278,7 @@ async def ihd(client: Client, message: Message):
         )
     )
 
-@app.on_message(command(["الشيخ", "النقشبندي", "نقشبندي"]))
+@app.on_message(command([" ‹ النقشدي ›"]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(1,90)
     url = f"https://t.me/ggcnjj/{rl}"
@@ -293,7 +293,7 @@ async def ihd(client: Client, message: Message):
         )
     )
 
-@app.on_message(command(["فيلم", "فيلمك. 🎥"]))
+@app.on_message(command(["‹ فيلم ›"]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(1,50)
     url = f"https://t.me/gyigkk/{rl}"
@@ -308,7 +308,7 @@ async def ihd(client: Client, message: Message):
         )
     )
 
-@app.on_message(command(["استوري", "استوريهات"]))
+@app.on_message(command(["‹ ستوريات ›"]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(1,50)
     url = f"https://t.me/yoipopl/{rl}"
@@ -325,7 +325,7 @@ async def ihd(client: Client, message: Message):
 
 
 
-@app.on_message(filters.group & command("طريقة ربط القنوات"))
+@app.on_message(filters.group & command("‹ طريقة ربط القنوات ›"))
 async def dowhmo(client: Client, message: Message):
     await message.reply_text("""- هلا والله◌\nعشان تشغل بالقنوات لازم تسوي بعض الخطوات وهي◌ :\n\n1 -› تدخل البوت قناتك وترفعه مشرف\n2 -› ترجع للقروب وتكتب { ربط + يوزر القناة }\n3 -› اضغط على زر اوامر التشغيل عشان تعرف كيف تشغل..""",
         reply_markup=InlineKeyboardMarkup(
