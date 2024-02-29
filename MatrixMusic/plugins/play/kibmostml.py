@@ -16,7 +16,7 @@ from random import  choice, randint
 
 
 
-@app.on_message(filters.command(["غنيلي", "غني", "✨غنيلي", "غنيي"], ""))
+@app.on_message(filters.command(["غنيلي ›", "غني", "✨غنيلي", "غنيي ›"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/gukygn/{rl}"
@@ -46,7 +46,7 @@ async def ihd(client: Client, message: Message):
         )
 
 
-@app.on_message(filters.command(["✨انمي", "انمي"], ""))
+@app.on_message(filters.command(["✨انمي ›", "انمي ›"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/LoreBots7/{rl}"
@@ -61,7 +61,7 @@ async def ihd(client: Client, message: Message):
         )
 
 
-@app.on_message(filters.command(["✨متحركه", "متحركه"], ""))
+@app.on_message(filters.command(["✨متحركه ›", "متحركه ›"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/GifWaTaN/{rl}"
@@ -75,7 +75,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["✨اقتباسات", "اقتباس"], ""))
+@app.on_message(filters.command(["✨اقتباسات ›", "اقتباس ›"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/LoreBots9/{rl}"
@@ -89,7 +89,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["هيدرا", "✨هيدرات"], ""))
+@app.on_message(filters.command(["‹ هيدرا","‹ هيدرات"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/flflfldld/{rl}"
@@ -103,7 +103,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["✨صور بنات", "صور بنات"], ""))
+@app.on_message(filters.command(["‹ صور بنات", "‹ افتار بنات"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/vvyuol/{rl}"
@@ -117,7 +117,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["صور شباب", "✨صور شباب"], ""))
+@app.on_message(filters.command(["‹ صور شباب", "‹ افتار شباب"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/vgbmm/{rl}"
@@ -131,7 +131,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["✨قران", "قران"], ""))
+@app.on_message(filters.command(["‹ قران", "‹ قران"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(1,90)
     url = f"https://t.me/opuml/{rl}"
@@ -145,7 +145,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["✨الشيخ نقشبندي", "النقشبندي", "نقشبندي"], ""))
+@app.on_message(filters.command(["‹ الشيخ نقشبندي", "النقشبندي", "‹ نقشبندي"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(1,90)
     url = f"https://t.me/ggcnjj/{rl}"
@@ -159,7 +159,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["فيلم", "✨فيلم"], ""))
+@app.on_message(filters.command(["‹ فيلم", "‹ فيلم"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,34)
     url = f"https://t.me/gyigkk/{rl}"
@@ -173,7 +173,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["استوري", "✨استوريهات"], ""))
+@app.on_message(filters.command(["‹ استوري", "‹ استوريهات"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(1,50)
     url = f"https://t.me/yoipopl/{rl}"
@@ -187,7 +187,7 @@ async def ihd(client: Client, message: Message):
             ]
         )
 
-@app.on_message(filters.command(["تينبمتك", "تنبمامت"], ""))
+@app.on_message(filters.command(["كت تويت ›", "كت ›"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(4,42)
     url = f"https://t.me/wffhvv/{rl}"
