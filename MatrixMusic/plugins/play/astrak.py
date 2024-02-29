@@ -1,28 +1,26 @@
-from pyrogram import Client, filters
-from pyrogram.types import Message
-from pyrogram.types import InlineKeyboardMarkup as Markup, InlineKeyboardButton as Button
-from pyrogram.enums import ChatType
-from pyrogram.errors import UserNotParticipant
-from MatrixMusic import app
+# from pyrogram import Client, filters
+# from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
+# from config import * 
+# from strings.filters import command
+# from MatrixMusic import app, Telegram
 
-channel = "AlmortagelTech"
-async def subscription(_, __: Client, message: Message):
-    try: await app.get_chat_member(channel, user_id)
-    except UserNotParticipant: return False
-    return True
-    
-subscribed = filters.create(subscription)
+# @app.on_message(filters.command(["start"]))
+# def start(client:Client, message:Message):
+#     SUPPORT_CHANNEL = "{SUPPORT_CHANNEL}"
 
-@app.on_message(~subscribed)
-async def checker(_: Client, message: Message):
-    if message.chat.type in [ChatType.GROUP, ChatType.SUPERGROUP]: await message.delete()
-    user_id = message.from_user.id
-    user = message.from_user.first_name
-    markup = Markup([
-        [Button("- ѕᴏụʀᴄᴇ ᴀʟᴍᴏʀᴛᴀɢᴇʟ -", url=f"https://t.me/{channel}")]
-    ])
-    await message.reply(
-        f"عذرًا عزيزي {user}عليك الإشتراك بقناة السورس أولا.",
-        reply_markup = markup
-    )
-    
+#     bot_button = InlineKeyboardMarkup(
+#         [[
+#             InlineKeyboardButton("زيارة القناة", url=f"{SUPPORT_CHANNEL}"),
+#             InlineKeyboardButton("تحقق من الاشتراك", callback_data="check_subscription")
+#         ]]
+#     )
+
+#     message.reply_text("مرحبًا بك! اضغط على أحد الأزرار بالأسفل للاشتراك.", reply_markup=bot_button)
+
+# @app.on_callback_query()
+# def callback_handler(client:Client, callback):
+#     if callback.data == "check_subscription":
+#         channel_id = CHANNEL_ID 
+
+#         if client.get_chat_member(chat_id= channel_id, user_id= callback.from_user.id).status == "member":
+#             callback.answer("تم التحقق من الاشتراك! مستخدم صالح.", show_alert=True)
