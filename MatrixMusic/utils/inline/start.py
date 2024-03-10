@@ -4,7 +4,7 @@ import config
 from MatrixMusic import app
 
 
-def start_panel(_):
+def startt_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
