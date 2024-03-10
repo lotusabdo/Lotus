@@ -1,7 +1,7 @@
 from pyrogram.types import InlineKeyboardButton
 
 import config
-from MatrixMu
+from MatrixMusic
 
 
 def start_panel(_):
