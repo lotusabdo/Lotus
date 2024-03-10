@@ -112,5 +112,5 @@ async def Zo_Mbi_e(client, message):
 ["رجوع للقائمة الرئيسيه"]], resize_keyboard=True)
     await message.reply_text(f"**♪ مرحبا بك في قسم ⟨ البوت ⟩  ⚡ .**", reply_markup=kep,quote=True)
     
-    ] 
-) 
+  
+
