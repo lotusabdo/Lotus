@@ -24,7 +24,7 @@ from dotenv import load_dotenv
 import re
 
 
-@Client.on_message(filters.command(["/start","رجوع للقائمة الرئيسيه"], ""))
+@Client.on_message(filters.command(["استارت","رجوع للقائمة الرئيسيه"], ""))
 async def start(client, message):
  if not message.chat.type == enums.ChatType.PRIVATE:
     if await joinch(message):
