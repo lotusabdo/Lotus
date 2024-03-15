@@ -21,7 +21,7 @@ from random import  choice, randint
 async def huhh(client: Client, message: Message):
     await message.reply_video(
         video=f"https://graph.org/file/8e889b909ac6011b4cde2.mp4",
-        caption=f"""\nمرحبا بك عزيزي {message.from_user.mention} في قسم سورس لوتس ميوزك\nللتحدث مع مطورين السورس اضغط علي الازرار بالاسفل👇""",
+        caption=f"""𝐖𝐞𝐥𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐋𝐨𝐭𝐮𝐬 𝐌𝐮𝐬𝐢𝐜""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -32,7 +32,7 @@ async def huhh(client: Client, message: Message):
                  
              ],[ 
             InlineKeyboardButton(
-                        "𖥻 َِ𝗨َِ𝗥 , َِ𝗙َِ𝗮َِ𝗩 َِ𝗔َِ𝗯َِ𝗗َِ𝗼َِ𝗼•", url=f"https://t.me/EU_TM"), 
+                        "𖥻 𝐔𝐑 , 𝐅𝐚𝐕 𝐀𝐛𝐃𝐎𝐨 -", url=f"https://t.me/EU_TM"), 
                    InlineKeyboardButton(
                         "[ 𝓟𝓲𝓟𝓼𝓮 ]‎%🇮🇹🚬💔]", url=f"https://t.me/Pep_s_e"), 
              ],[ 
