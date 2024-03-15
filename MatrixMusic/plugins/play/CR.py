@@ -32,7 +32,7 @@ async def huhh(client: Client, message: Message):
                  
              ],[ 
             InlineKeyboardButton(
-                        "𖥻 َِ𝗨َِ𝗥 , َِ𝗙َِ𝗮َِ𝗩 َِ𝗔َِ𝗯َِ𝗗َِ𝗼َِ𝗼•", url=f"https://t.me/jx_xr"), 
+                        "𖥻 َِ𝗨َِ𝗥 , َِ𝗙َِ𝗮َِ𝗩 َِ𝗔َِ𝗯َِ𝗗َِ𝗼َِ𝗼•", url=f"https://t.me/EU_TM"), 
                    InlineKeyboardButton(
                         "[ 𝓟𝓲𝓟𝓼𝓮 ]‎%🇮🇹🚬💔]", url=f"https://t.me/Pep_s_e"), 
              ],[ 
@@ -60,7 +60,7 @@ async def huhh(client: Client, message: Message):
     
 )
 async def yas(client, message):
-    usr = await client.get_chat("jx_xr")
+    usr = await client.get_chat("EU_TM")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
     await message.reply_photo(photo,       caption=f"معلومات مطور السورس\n\n‍ ¦dev :{name}\n\n ¦user :@{usr.username}\n\n ¦id :`{usr.id}`\n\n ¦bio :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
@@ -81,7 +81,7 @@ async def yas(client, message):
     
 )
 async def yas(client, message):
-    usr = await client.get_chat("jx_xr")
+    usr = await client.get_chat("EU_TM")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
     await message.reply_photo(photo,       caption=f"معلومات مطور السورس.\n\n¦dev :{name}\n\n ¦user :@{usr.username}\n\n ¦id :`{usr.id}`\n\n ¦boi :{usr.bio}\n\nՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", 
