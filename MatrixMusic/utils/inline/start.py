@@ -26,11 +26,11 @@ def private_panel(_):
         
         [
             InlineKeyboardButton(text="مطور البوت", user_id=config.OWNER_ID),
-            InlineKeyboardButton(text="𝙶𝚁𝙾̀𝚄𝙿", url=f"https://t.me/jx_xll"), 
+            InlineKeyboardButton(text="ᏀᎡΌႮᏢ", url=f"https://t.me/jx_xll"), 
         ],
         [
             
-            InlineKeyboardButton(text="𝚂́𝙾𝚄𝚁𝙲𝙴 𝙻𝙾𝚃𝚄𝚂", url=f"https://t.me/l2_2Y") , 
+            InlineKeyboardButton(text="ՏΌႮᎡᏟᎬ ᏞΌͲႮՏ", url=f"https://t.me/l2_2Y") , 
         ],
     ]
     return buttons
