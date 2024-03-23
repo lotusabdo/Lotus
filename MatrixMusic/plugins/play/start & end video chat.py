@@ -1,10 +1,9 @@
 import asyncio
 from pyrogram import Client, filters
-from strings import get_command
 from strings.filters import command
 from pyrogram.types import *
 from MatrixMusic import app
-▒
+
 
 
 @app.on_message(filters.video_chat_started)
