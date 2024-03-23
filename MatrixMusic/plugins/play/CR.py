@@ -26,15 +26,15 @@ async def huhh(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "ᏀᎡΌႮᏢ", url=f"https://t.me/jx_xll"), 
+                        "𝐆𝐑𝐎𝐔𝐏", url=f"https://t.me/jx_xll"), 
                  InlineKeyboardButton(
-                   "ՏΌႮᎡᏟᎬ ᏞΌͲႮՏ",       url=f"https://t.me/l2_2Y"), 
+                   " 𝐒𝐎𝐔𝐑𝐂𝐄",       url=f"https://t.me/l2_2Y"), 
                  
              ],[ 
             InlineKeyboardButton(
-                        "𖥻 𝐔𝐑 , 𝐅𝐚𝐕 𝐀𝐛𝐃𝐎𝐨 -", url=f"https://t.me/EU_TM"), 
+                        "𝐀 𝐛 𝐃 𝐎 𝐨 ", url=f"https://t.me/EU_TM"), 
                    InlineKeyboardButton(
-                        "[ 𝓟𝓲𝓟𝓼𝓮 ]‎%🇮🇹🚬💔]", url=f"https://t.me/Pep_s_e"), 
+                        "𝐏 𝐞 𝐏 𝐬 𝐞 ", url=f"https://t.me/Pep_s_e"), 
              ],[ 
                   InlineKeyboardButton(
                 text="اضغط لاضافتي لمجموعتك⚡",
